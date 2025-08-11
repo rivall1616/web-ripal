@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nusantara Culinary</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Nusantara Culinary</div>
-            <ul>
-                <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#produk">Produk</a></li>
-                <li><a href="#tentang">Tentang Kami</a></li>
-                <li><a href="#kontak">Kontak</a></li>
+        <div class="nav-container">
+            <nav>
+                <div class="logo">Nusantara Culinary</div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
                 </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
-
-    <main>
-        <section id="beranda" class="hero">
-            <h1>Cita Rasa Nusantara</h1>
-            <p>Menyajikan Kelezatan Tradisional Indonesia</p>
-            <button onclick="TampilkanPromo()">Lihat promo</button>
-        </section>
-
-        <section id="produk">
-            <h2>Produk Kami</h2>
-            <div class="produk-container">
-                <div class="produk">
-                <img src="https://i.pinimg.com/originals/8d/1a/c0/8d1ac0a09af5cb596a9a9723c65cff79.jpg" alt="Rendang">
-                <h3> Rendang Premium</h3>
-                <p>Daging sapi pilihan dengan bumbu tradisional</p>
-            </div>
-            <div class="produk">
-                <img src="https://www.kitchensanctuary.com/wp-content/uploads/2020/07/Nasi-Goreng-square-FS-57.jpg" alt="Nasi Goreng">
-                <h3>Nasi Goreng Spesial</h3>
-                <p>Nasi goreng dengan racikan bumbu autentik</p>
-            </div>
-            </div>
-        </section>
+        <main>
+            <section id="beranda" class="hero">
+                <h1>Cita Rasa Nusantara</h1>
+                <p>Menyajikan kelezatan tradisional Indonesia</p>
+                <button onclick="tampilkanPromo()">Lihat Promo</button>
+            </section>
+    
+            <section id="produk">
+                <h2>Produk Kami</h2>
+                <div class="produk-container">
+                    <div class="produk">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.wmfbzhsT0UkwZokINYEj5AHaFj?pid=Api&P=0&h=180" alt="Rendang">
+                        <h3>Rendang Premium</h3>
+                        <p>Daging sapi pilihan dengan bumbu tradisional</p>
+                    </div>
+                    <div class="produk">
+                        <img src="https://www.masakapahariini.com/wp-content/uploads/2020/02/kumpulan-resep-nasi-goreng.jpg" alt="Nasi Goreng">
+                        <h3>Nasi Goreng Spesial</h3>
+                        <p>Nasi goreng dengan racikan bumbu autentik</p>
+                    </div>
+                </div>
+            </section>
         </main>
-
+    
         <footer>
             <p>&copy; 2025 Nusantara Culinary. Hak Cipta Dilindungi.</p>
         </footer>
-
-        <script src="script2.js"></script>
-    
+    <script src="script2.js"></script>
 </body>
 </html>
