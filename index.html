@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nusantara Culinary</title>
+    <title>Nusantara Culinary - Kelezatan Tradisi</title>
+    
+    <meta name="description" content="Perusahaan makanan terbaik yang menyajikan citarasa otentik Nusantara">
+    <meta name="keywords" content="makanan indonesia, kuliner nusantara, masakan tradisional">
+    
+    <meta property="og:title" content="Nusantara Culinary">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nusantaraculinary.com">
+    
+    <link rel="icon" href="http://grafisnesia.com/wp-content/uploads/2024/09/Logo-IKN-Nusantara.jpeg" type="image/jpeg">
+    
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <nav>
-                <div class="logo">Nusantara Culinary</div>
-                <div class="hamburger" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="//grafisnesia.com/wp-content/uploads/2024/09/Logo-IKN-Nusantara.jpeg" alt="Logo Nusantara Culinary">
                 </div>
-                <ul id="nav-menu">
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu">
                     <li><a href="#beranda">Beranda</a></li>
                     <li><a href="#produk">Produk</a></li>
                     <li><a href="#tentang">Tentang</a></li>
@@ -25,33 +39,65 @@
             </nav>
         </div>
     </header>
-        <main>
-            <section id="beranda" class="hero">
-                <h1>Cita Rasa Nusantara</h1>
-                <p>Menyajikan kelezatan tradisional Indonesia</p>
-                <button onclick="tampilkanPromo()">Lihat Promo</button>
-            </section>
-    
-            <section id="produk">
-                <h2>Produk Kami</h2>
-                <div class="produk-container">
-                    <div class="produk">
-                        <img src="https://tse1.mm.bing.net/th/id/OIP.wmfbzhsT0UkwZokINYEj5AHaFj?pid=Api&P=0&h=180" alt="Rendang">
-                        <h3>Rendang Premium</h3>
-                        <p>Daging sapi pilihan dengan bumbu tradisional</p>
-                    </div>
-                    <div class="produk">
-                        <img src="https://www.masakapahariini.com/wp-content/uploads/2020/02/kumpulan-resep-nasi-goreng.jpg" alt="Nasi Goreng">
-                        <h3>Nasi Goreng Spesial</h3>
-                        <p>Nasi goreng dengan racikan bumbu autentik</p>
-                    </div>
+
+    <section id="beranda" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Nusantara Culinary</h1>
+                <p>Mempersembahkan cita rasa otentik dari berbagai daerah Indonesia</p>
+                <a href="#produk" class="btn btn-primary">Jelajahi Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="produk-section">
+        <div class="container">
+            <h2 class="section-title">Produk Kami</h2>
+            
+            <div class="produk-grid">
+                <div class="produk-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.4pY3tA5po23Y0hOAA_PsDgHaHW?pid=Api&P=0&h=180" alt="Rendang Premium">
+                    <h3>Rendang Premium</h3>
+                    <p>Daging sapi pilihan dengan bumbu tradisional</p>
+                    <button class="btn btn-secondary">Pesan Sekarang</button>
                 </div>
-            </section>
-        </main>
-    
-        <footer>
-            <p>&copy; 2025 Nusantara Culinary. Hak Cipta Dilindungi.</p>
-        </footer>
+                
+                <div class="produk-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.CYkhIPQGro4alwiqFN5UhQHaHa?pid=Api&P=0&h=180" alt="Nasi Goreng Spesial">
+                    <h3>Nasi Goreng Spesial</h3>
+                    <p>Nasi goreng dengan racikan bumbu autentik</p>
+                    <button class="btn btn-secondary">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.RTw6-64vyR8YbfYZrM82gwHaHa?pid=Api&P=0&h=180" alt="Logo Footer">
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-kontak">
+                    <h4>Hubungi Kami</h4>
+                    <p>Email: info@nusantaraculinary.com</p>
+                    <p>Telepon: +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Nusantara Culinary. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
     <script src="script2.js"></script>
 </body>
 </html>
